@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #container {
+        position: relative;
+        max-width: 600px;
+        height: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        
+        background: #f5f5f5;
+      }
+
+      #title {
+        position: relative;
+        width: 200px;
+        height: 26px;
+        left: 35%;
+        top: 30px;
+
+        font-family: "Pretendard";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+      }
+
+      #listbox {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 194px;
+        height: 28px;
+        left: 210px;
+        top: 85px;
+
+        background: #FFFFFF;
+        border: 3px solid #4C7343;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+
+      }
+
+      #tilebox {
+        position: absolute;
+        width: 105px;
+        height: 28px;
+        left: 210px;
+        top: 85px;
+
+        background: #4C7343;
+        border-radius: 15px; 
+        }
+
+      #listtext {
+        position: absolute;
+        width: 81px;
+        height: 17px;
+        left: 315px;
+        top: 88px;
+
+        font-family: 'Noto Sans';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4C7343;
+      }
+
+
+      #abox {
+        position: relative;
+        width: 30%;
+        height: 25vh;
+        top: 145px;
+        right: 20%;
+        background: #ffffff;
+        box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
+        border-radius: 5px;
+        margin: 0 auto;
+      }
+
+      #atitle {
+        position: relative;
+        width: 100px;
+        height: 26px;
+        left: 20%;
+        top: 30px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #4c7343;
+      }
+
+      #aline {
+        position: relative;
+        top: 40px;
+        width: 50px;
+        left: 22%;
+      }
+
+      #atext {
+        position: relative;
+        width: 150px;
+        height: 26px;
+        left: 10%;
+        top: 50px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+      }
+
+      #bbox {
+        position: relative;
+        width: 30%;
+        height: 25vh;
+        bottom: 95px;
+        left: 20%;
+        background: #ffffff;
+        box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
+        border-radius: 5px;
+        margin: 0 auto;
+      }
+
+      #btitle {
+        position: relative;
+        width: 100px;
+        height: 26px;
+        left: 20%;
+        top: 30px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #4c7343;
+      }
+
+      #bline {
+        position: relative;
+        top: 40px;
+        width: 50px;
+        left: 22%;
+      }
+
+      #btext {
+        position: relative;
+        width: 150px;
+        height: 26px;
+        left: 10%;
+        top: 50px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+      }
+
+      #cbox {
+        position: relative;
+        width: 30%;
+        height: 25vh;
+        bottom: 45px;
+        right: 20%;
+        background: #ffffff;
+        box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
+        border-radius: 5px;
+        margin: 0 auto;
+      }
+
+      #ctitle {
+        position: relative;
+        width: 100px;
+        height: 26px;
+        left: 20%;
+        top: 30px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #4c7343;
+      }
+
+      #cline {
+        position: relative;
+        top: 40px;
+        width: 50px;
+        left: 22%;
+      }
+
+      #ctext {
+        position: relative;
+        width: 150px;
+        height: 26px;
+        left: 10%;
+        top: 50px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+      }
+
+      #dbox {
+        position: relative;
+        width: 30%;
+        height: 25vh;
+        bottom: 285px;
+        left: 20%;
+        background: #ffffff;
+        box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
+        border-radius: 5px;
+        margin: 0 auto;
+      }
+
+      #dtitle {
+        position: relative;
+        width: 100px;
+        height: 26px;
+        left: 20%;
+        top: 30px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #4c7343;
+      }
+
+      #dline {
+        position: relative;
+        top: 40px;
+        width: 50px;
+        left: 22%;
+      }
+
+      #dtext {
+        position: relative;
+        width: 150px;
+        height: 26px;
+        left: 10%;
+        top: 50px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+      }
+
+      #ebox {
+        position: relative;
+        width: 30%;
+        height: 25vh;
+        bottom: 235px;
+        right: 20%;
+        background: #ffffff;
+        box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
+        border-radius: 5px;
+        margin: 0 auto;
+      }
+
+      #etitle {
+        position: relative;
+        width: 100px;
+        height: 26px;
+        left: 20%;
+        top: 30px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #4c7343;
+      }
+
+      #eline {
+        position: relative;
+        top: 40px;
+        width: 50px;
+        left: 22%;
+      }
+
+      #etext {
+        position: relative;
+        width: 150px;
+        height: 26px;
+        left: 10%;
+        top: 50px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+      }
+
+      #fbox {
+        position: relative;
+        width: 30%;
+        height: 25vh;
+        bottom: 475px;
+        left: 20%;
+        background: #ffffff;
+        box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
+        border-radius: 5px;
+        margin: 0 auto;
+      }
+
+      #ftitle {
+        position: relative;
+        width: 100px;
+        height: 26px;
+        left: 20%;
+        top: 30px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #4c7343;
+      }
+
+      #fline {
+        position: relative;
+        top: 40px;
+        width: 50px;
+        left: 22%;
+      }
+
+      #ftext {
+        position: relative;
+        width: 150px;
+        height: 26px;
+        left: 10%;
+        top: 50px;
+
+        font-family: "SUIT";
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+      }
+
+      #greenbox {
+        position: relative;
+        width: 100%;
+        height: 30vh;
+        bottom: 500px;
+        right: 1%;
+        background: #AAD6A0;
+        box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
+        border-radius: 5px;
+        margin: 0 auto;
+      }
+
+      #icon {
+        position: relative;
+        top: 4000px;
+        left: 2%;
+        border: 0;
+        background-color: transparent;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+
+      #lefticon {
+        position: relative;
+        bottom: 22%;
+        right: 16%;
+      }
+
+      #righticon {
+        position: relative;
+        bottom: 57%;
+        left: 18%;
+      }
+
+      #blefticon {
+        position: relative;
+        bottom: 30%;
+        right: 40%;
+      }
+
+      #brighticon {
+        position: relative;
+        bottom: 48%;
+        left: 40%;
+      }
+
+
+
+
+
+
+    </style>
+    <div id="container">
+        <div style=
+        "position: relative;
+        width: 200px;
+        height: 26px;
+        left: 35%;
+        top: 30px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 24px;
+        text-align: center;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        color: #000000;">
+            <script>
+            date = new Date().toLocaleDateString();
+            document.write(date);
+            </script>
+            </div>
+            <div id="listbox"></div>
+            <div id="tilebox">
+                <img src="../images/Group 12.png" />
+            </div>
+            <div id="listtext">리스트</div>
+      <div id="abox">
+        <div id="atitle">
+          2023년 XX월
+          <br />
+          XX일 X요일
+        </div>
+        <div id="aline">
+          <img src="../images/Line 2.png" />
+        </div>
+        <div id="atext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
+          오늘 무슨 일이
+          <br />
+          있었냐면...
+        </div>
+      </div>
+      <div id="bbox">
+        <div id="btitle">
+          2023년 XX월
+          <br />
+          XX일 X요일
+        </div>
+        <div id="bline">
+          <img src="../images/Line 2.png" />
+        </div>
+        <div id="btext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
+          오늘 무슨 일이
+          <br />
+          있었냐면...
+        </div>
+      </div>
+      <div id="cbox">
+        <div id="ctitle">
+          2023년 XX월
+          <br />
+          XX일 X요일
+        </div>
+        <div id="cline">
+          <img src="../images/Line 2.png" />
+        </div>
+        <div id="ctext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
+          오늘 무슨 일이
+          <br />
+          있었냐면...
+        </div>
+      </div>
+      <div id="dbox">
+        <div id="dtitle">
+          2023년 XX월
+          <br />
+          XX일 X요일
+        </div>
+        <div id="dline">
+          <img src="../images/Line 2.png" />
+        </div>
+        <div id="dtext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
+          오늘 무슨 일이
+          <br />
+          있었냐면...
+        </div>
+    </div>
+    <div id="ebox">
+        <div id="etitle">
+          2023년 XX월
+          <br />
+          XX일 X요일
+        </div>
+        <div id="eline">
+          <img src="../images/Line 2.png" />
+        </div>
+        <div id="etext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
+          오늘 무슨 일이
+          <br />
+          있었냐면...
+        </div>
+      </div>
+      <div id="fbox">
+        <div id="ftitle">
+          2023년 XX월
+          <br />
+          XX일 X요일
+        </div>
+        <div id="fline">
+          <img src="../images/Line 2.png" />
+        </div>
+        <div id="ftext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
+          오늘 무슨 일이
+          <br />
+          있었냐면...
+        </div>
+      </div>
+      <div id="greenbox">
+        <div type="icon" 
+        onclick="location.href='http://127.0.0.1:5500/0623/pages/diary.html';"
+        style="
+        position: relative;
+        top: 5%;
+        left: 1%;
+        
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        
+        
+        
+        "s
+        >
+            <img src="../images/Group 9.png" />
+        </div>
+        <div id="lefticon">
+            <img src="../images/Vector (4).png" />
+        </div>
+        <div id="righticon">
+            <img src="../images/Vector (5).png" />
+        </div>
+        <div id="blefticon">
+            <img src="../images/Vector (3).png" />
+        </div>
+        <div id="brighticon">
+            <img src="../images/Group 6 (1).png" />
+        </div>
+      </div>
+      <script src="/0623/pages/diary.html"></script>
+      <script src="/0623/pages/check.html"></script>
+      
+  </body>
+</html>
