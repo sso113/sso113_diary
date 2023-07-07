@@ -13,7 +13,7 @@
         height: 1000px;
         margin: 0 auto;
         text-align: center;
-        
+
         background: #f5f5f5;
       }
 
@@ -42,11 +42,10 @@
         left: 210px;
         top: 85px;
 
-        background: #FFFFFF;
-        border: 3px solid #4C7343;
+        background: #ffffff;
+        border: 3px solid #4c7343;
         box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
-
       }
 
       #tilebox {
@@ -56,9 +55,9 @@
         left: 210px;
         top: 85px;
 
-        background: #4C7343;
-        border-radius: 15px; 
-        }
+        background: #4c7343;
+        border-radius: 15px;
+      }
 
       #listtext {
         position: absolute;
@@ -67,13 +66,12 @@
         left: 315px;
         top: 88px;
 
-        font-family: 'Noto Sans';
+        font-family: "Noto Sans";
         font-weight: 600;
         font-size: 16px;
         line-height: 22px;
-        color: #4C7343;
+        color: #4c7343;
       }
-
 
       #abox {
         position: relative;
@@ -375,7 +373,7 @@
         height: 30vh;
         bottom: 500px;
         right: 1%;
-        background: #AAD6A0;
+        background: #aad6a0;
         box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
         border-radius: 5px;
         margin: 0 auto;
@@ -413,159 +411,179 @@
         bottom: 48%;
         left: 40%;
       }
-
-
-
-
-
-
     </style>
-    <div id="container">
-        <div style=
-        "position: relative;
-        width: 200px;
-        height: 26px;
-        left: 35%;
-        top: 30px;
+    <div style="height: 1000px; overflow: auto">
+      <div id="container">
+        <div
+          style="
+            position: relative;
+            width: 200px;
+            height: 26px;
+            left: 35%;
+            top: 30px;
 
-        font-style: normal;
-        font-weight: 600;
-        font-size: 25px;
-        line-height: 24px;
-        text-align: center;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        color: #000000;">
-            <script>
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 24px;
+            text-align: center;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            color: #000000;
+          "
+        >
+          <script>
             date = new Date().toLocaleDateString();
             document.write(date);
-            </script>
-            </div>
-            <div id="listbox"></div>
-            <div id="tilebox">
-                <img src="../images/Group 12.png" />
-            </div>
-            <div id="listtext">리스트</div>
-      <div id="abox">
-        <div id="atitle">
-          2023년 XX월
-          <br />
-          XX일 X요일
+          </script>
         </div>
-        <div id="aline">
-          <img src="../images/Line 2.png" />
+        <div id="listbox"></div>
+        <div id="tilebox">
+          <img src="../images/Group 12.png" />
         </div>
-        <div id="atext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
-          오늘 무슨 일이
-          <br />
-          있었냐면...
+        <div id="listtext">리스트</div>
+        <div id="abox">
+          <div id="atitle">
+            2023년 XX월
+            <br />
+            XX일 X요일
+          </div>
+          <div id="aline">
+            <img src="../images/Line 2.png" />
+          </div>
+          <div
+            id="atext"
+            onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';"
+          >
+            오늘 무슨 일이
+            <br />
+            있었냐면...
+          </div>
         </div>
-      </div>
-      <div id="bbox">
-        <div id="btitle">
-          2023년 XX월
-          <br />
-          XX일 X요일
+        <div id="bbox">
+          <div id="btitle">
+            2023년 XX월
+            <br />
+            XX일 X요일
+          </div>
+          <div id="bline">
+            <img src="../images/Line 2.png" />
+          </div>
+          <div
+            id="btext"
+            onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';"
+          >
+            오늘 무슨 일이
+            <br />
+            있었냐면...
+          </div>
         </div>
-        <div id="bline">
-          <img src="../images/Line 2.png" />
+        <div id="cbox">
+          <div id="ctitle">
+            2023년 XX월
+            <br />
+            XX일 X요일
+          </div>
+          <div id="cline">
+            <img src="../images/Line 2.png" />
+          </div>
+          <div
+            id="ctext"
+            onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';"
+          >
+            오늘 무슨 일이
+            <br />
+            있었냐면...
+          </div>
         </div>
-        <div id="btext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
-          오늘 무슨 일이
-          <br />
-          있었냐면...
+        <div id="dbox">
+          <div id="dtitle">
+            2023년 XX월
+            <br />
+            XX일 X요일
+          </div>
+          <div id="dline">
+            <img src="../images/Line 2.png" />
+          </div>
+          <div
+            id="dtext"
+            onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';"
+          >
+            오늘 무슨 일이
+            <br />
+            있었냐면...
+          </div>
         </div>
-      </div>
-      <div id="cbox">
-        <div id="ctitle">
-          2023년 XX월
-          <br />
-          XX일 X요일
+        <div id="ebox">
+          <div id="etitle">
+            2023년 XX월
+            <br />
+            XX일 X요일
+          </div>
+          <div id="eline">
+            <img src="../images/Line 2.png" />
+          </div>
+          <div
+            id="etext"
+            onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';"
+          >
+            오늘 무슨 일이
+            <br />
+            있었냐면...
+          </div>
         </div>
-        <div id="cline">
-          <img src="../images/Line 2.png" />
-        </div>
-        <div id="ctext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
-          오늘 무슨 일이
-          <br />
-          있었냐면...
-        </div>
-      </div>
-      <div id="dbox">
-        <div id="dtitle">
-          2023년 XX월
-          <br />
-          XX일 X요일
-        </div>
-        <div id="dline">
-          <img src="../images/Line 2.png" />
-        </div>
-        <div id="dtext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
-          오늘 무슨 일이
-          <br />
-          있었냐면...
-        </div>
-    </div>
-    <div id="ebox">
-        <div id="etitle">
-          2023년 XX월
-          <br />
-          XX일 X요일
-        </div>
-        <div id="eline">
-          <img src="../images/Line 2.png" />
-        </div>
-        <div id="etext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
-          오늘 무슨 일이
-          <br />
-          있었냐면...
-        </div>
-      </div>
-      <div id="fbox">
-        <div id="ftitle">
-          2023년 XX월
-          <br />
-          XX일 X요일
-        </div>
-        <div id="fline">
-          <img src="../images/Line 2.png" />
-        </div>
-        <div id="ftext" onclick="location.href='http://127.0.0.1:5500/0623/pages/check.html';">
-          오늘 무슨 일이
+        <div id="fbox">
+          <div id="ftitle">
+            2023년 XX월
+            <br />
+            XX일 X요일
+          </div>
+          <div id="fline">
+            <img src="../images/Line 2.png" />
+          </div>
+          <div id="ftext" onclick=location.href='';"> 오늘 무슨 일이
           <br />
           있었냐면...
         </div>
       </div>
       <div id="greenbox">
-        <div type="icon" 
-        onclick="location.href='http://127.0.0.1:5500/0623/pages/diary.html';"
-        style="
-        position: relative;
-        top: 5%;
-        left: 1%;
-        
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        
-        
-        
-        "s
+        <div
+          type="icon"
+          onclick="location.href='http://127.0.0.1:5500/0623/pages/diary.html';"
+          style="
+            position: relative;
+            top: 5%;
+            left: 1%;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          "
         >
-            <img src="../images/Group 9.png" />
+          <img src="../images/Group 9.png" />
         </div>
         <div id="lefticon">
-            <img src="../images/Vector (4).png" />
+          <img src="../images/Vector (4).png" />
         </div>
         <div id="righticon">
-            <img src="../images/Vector (5).png" />
+          <img src="../images/Vector (5).png" />
         </div>
         <div id="blefticon">
-            <img src="../images/Vector (3).png" />
+          <img src="../images/Vector (3).png" />
         </div>
-        <div id="brighticon">
-            <img src="../images/Group 6 (1).png" />
+        <div
+          type="brighticon"
+          onclick="location.href='http://127.0.0.1:5500/0623/pages/login.html';"
+          style="position: relative; bottom: 48%; left: 40%"
+        >
+          <img src="../images/Group 15.png" />
         </div>
       </div>
       <script src="/0623/pages/diary.html"></script>
       <script src="/0623/pages/check.html"></script>
-      
+    </div>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        var diaryEntry = localStorage.getItem("atext");
+        document.getElementById("atext").innerText = diaryEntry;
+      });
+    </script>
   </body>
 </html>

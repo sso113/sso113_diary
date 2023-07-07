@@ -96,7 +96,7 @@
         position: relative;
         width: 600px;
         height: 30vh;
-        top: 25%;
+        top: 30%;
         right: 12%;
         background: #aad6a0;
         box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
@@ -128,9 +128,11 @@
         left: 40%;
       }
     </style>
+     <div style="height: 1000px; overflow: auto">
     <div id="container">
       <div id="whitebox">
         <div
+          placeholher="오늘 무슨 일이 있었냐면..."
           style="
             position: relative;
             width: 300px;
@@ -158,9 +160,11 @@
           <div id="imagetext">사진</div>
         </div>
         <div class="text">
-          <textarea 
-          placeholder=
-          "오늘 무슨 일이 있었냐면..."
+          <input 
+          type="text"
+          placeholder="오늘 무슨 일이 있었냐면..."
+          
+        
           style="
           position: relative;
           width: 280px;
@@ -168,13 +172,12 @@
           right: 1%;
           top: 65px;
           border: none;
-
           font-style: normal;
           font-weight: 600;
           font-size: 16px;
           line-height: 20px;
           color: #000000;">
-        </textarea>
+        </input>
         </div>
         <div id="greenbox">
             <div type="icon" onclick="location.href='http://127.0.0.1:5500/0623/pages/index.html';">
@@ -183,8 +186,16 @@
             <div id="blefticon">
               <img src="../images/ic_round-image (1).png" />
             </div>
-            <div id="brighticon">
-              <img src="../images/Group 6 (1).png" />
+            <div 
+            type="brighticon"
+            onclick="location.href='http://127.0.0.1:5500/0623/pages/login.html';"
+            style="
+             position: relative;
+             top: 40px;
+             left: 40%;
+            "
+            >
+              <img src="../images/Group 15.png" />
             </div>
         </div>
         
@@ -192,5 +203,23 @@
       </div>
     </div>
     <script src="/0623/pages/index.html"></script>
+</div>
+
+<script>
+    function saveDiary() {
+      var diaryEntry = document.getElementById("icon").value;
+      localStorage.setItem("icon", diaryEntry);
+      alert("Diary entry saved!");
+    }
+  </script>
+
+  
+  
+
+
+
+
+
+
   </body>
 </html>

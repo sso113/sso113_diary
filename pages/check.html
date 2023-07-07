@@ -10,7 +10,7 @@
       #container {
         position: relative;
         width: 600px;
-        height: 1300px;
+        height: 1500px;
         margin: 0 auto;
         text-align: center;
 
@@ -122,8 +122,7 @@
       #textboxone {
         position: relative;
         height: 10%;
-
-        top: 680px;
+        top: 820px;
         right: 3%;
       }
 
@@ -131,7 +130,7 @@
         position: relative;
         width: 100%;
         height: 10vh;
-        top: 750px;
+        top: 890px;
         right: 3%;
       }
 
@@ -139,7 +138,7 @@
         position: relative;
         width: 600px;
         height: 30vh;
-        top: 130%;
+        top: 170%;
         right: 12%;
         background: #aad6a0;
         box-shadow: 0px 0px 4px 2px rgba(100, 100, 100, 0.25);
@@ -149,15 +148,15 @@
 
       #blank {
         position: relative;
-              width: 410px;
-              height: 40px;
+              width: 470px;
+              height: 110px;
               left: 37.5%;
-              bottom: 150px;
+              bottom: 210px;
               border-radius: 10px;
               box-shadow: 0px 0px 6px 4px rgba(100, 100, 100, 0.25);
               border: none;
               font-style: normal;
-              font-weight: 800;
+              font-weight: 400;
               font-size: 20px;
               line-height: 24px;
               text-align: center;
@@ -197,17 +196,14 @@
         left: 40%;
       }
     </style>
+    <div style="height: 1000px; overflow: auto">
     <div id="container">
       <div type="ticon" 
       onclick="location.href='http://127.0.0.1:5500/0623/pages/index.html';"
       style="
        position: relative;
         top: 4.5%;
-        right: 35%;
-      
-      
-      
-      "
+        right: 35%;"
       >
         <img src="../images/mdi_trash-can (1).png" />
       </div>
@@ -239,9 +235,7 @@
             <img src="../images/Line 1 (6).png" />
           </div>
           <div class="text">
-<textarea 
-placeholder=
-"오늘 무슨 일이 있었냐면..."
+          <input 
             style="
             position: relative;
             width: 280px;
@@ -255,7 +249,7 @@ placeholder=
             font-size: 16px;
             line-height: 20px;
             color: #000000;">
-          </textarea>
+          </input>
           </div>
           <div id="text"></div>
           
@@ -280,51 +274,53 @@ placeholder=
           <div id="blefticon">
             <img src="../images/Vector (3).png" />
           </div>
-          <div id="brighticon">
-            <img src="../images/Group 6 (1).png" />
+          <div 
+          type="brighticon"
+          onclick="location.href='http://127.0.0.1:5500/0623/pages/login.html';"
+          style="
+           position: relative;
+           bottom: 48%;
+           left: 40%;
+          "
+          >
+            <img src="../images/Group 15.png" />
           </div>
         </div>
       </div>
     </div>
     <div id="blank">
-    <div id="tasks"></div>
-    <input id="input" type="text" placeholder="댓글을 입력하세요"
+    <div 
+    id="tasks"></div>
+    
+    <input 
+    id="input" 
+    type="text" 
+    placeholder="댓글을 입력해주세요"
     style="
-              position: relative;
-              width: 410px;
-              height: 40px;
-              left: 0.005%;
-              bottom: 3px;
-              border-radius: 10px;
-              box-shadow: 0px 0px 6px 4px rgba(100, 100, 100, 0.25);
-              border: none;
-              font-style: normal;
-              font-weight: 800;
-              font-size: 20px;
-              line-height: 24px;
-              text-align: center;
-              color: #000000;
-            ">
-            </div>
+    position: absolute;
+    width: 470px;
+    height: 110px;
+    left: 1px;
+    bottom: 410px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    ">
+    </div>
     <button id="addBtn"
     style="
             position: relative;
             width: 60px;
             height: 40px;
-            left: 59.7%;
-            bottom: 192px;
+            left: 59%;
+            bottom: 680px;
             border-radius: 10px;
-            background-color: #ffffff;
-            box-shadow: 0px 0px 6px 4px rgba(100, 100, 100, 0.25);
+        
             border: none;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 20px;
-            line-height: 24px;
-            text-align: center;
-            color: #000000;
-          "
-          >등록</button>
+            background-color: transparent;
+          ">
+          <img src="../images/Send Button (2).png">
+        </button>
     
 
     <script>
@@ -347,7 +343,7 @@ placeholder=
                     tasks.appendChild(newItem);
                     input.value = '';
                 } else {
-                    alert('댓글을 입력하세요');
+                    alert('댓글을 입력해주세요');
                 }
             });
 
@@ -357,5 +353,6 @@ placeholder=
       </form>
       <div class="comments mt-3"></div>
     </div>
+</div>
   </body>
 </html>
